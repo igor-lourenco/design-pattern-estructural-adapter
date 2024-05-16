@@ -1,1 +1,1 @@
-# design-patterns-estructural-adapter
+# Adapter
