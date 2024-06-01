@@ -9,6 +9,9 @@ Imagina que está criando uma conexão do Computador com a tela que tem a entrad
 - Como uma classe pode ser reusada mesmo que não tenha a interface requisitada pelo cliente?
 - Como classes de interfaces incompatíveis podem trabalhar juntas?
 
+ ## Estrutura sem usar o Adapter
+![adapter_before](https://github.com/igor-lourenco/design-pattern-estructural-adapter/blob/main/uml/adapter_before.png) 
+
 ## Solução
 
 Você pode criar um adaptador. Ele é um objeto especial que converte a interface de um objeto para que outro objeto possa entendê-lo.
