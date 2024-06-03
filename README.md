@@ -37,3 +37,6 @@ Essa implementação usa o princípio de composição do objeto: o adaptador imp
 - O HDMIToVGAAdapter é uma classe que é capaz de trabalhar tanto com o Computer quanto o VGA: ela implementa a interface HDMI enquanto encobre o objeto da interface VGA. O HDMIToVGAAdapter recebe chamadas do Computer através da interface HDMI e as traduz em chamadas para o objeto implementado do VGA em um formato que ele possa entender.
 
 - O código da classe Computer não é acoplado à classe concreta do HDMIToVGAAdapter desde que ele trabalhe com o adaptador através da interface HDMI. Graças a isso, você pode introduzir novos tipos de adaptadores no programa sem quebrar o código da classe Computer existente. Isso pode ser útil quando a interface de uma classe é mudada ou substituída, apenas pode criar uma nova classe adaptador sem mudar o código cliente.
+
+![adapter_after_classe](https://github.com/igor-lourenco/design-pattern-estructural-adapter/blob/main/uml/adapter_after_objeto.png) 
+
