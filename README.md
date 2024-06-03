@@ -38,7 +38,7 @@ Essa implementação usa o princípio de composição do objeto: o adaptador imp
 
 - O código da classe Computer não é acoplado à classe concreta do HDMIToVGAAdapter desde que ele trabalhe com o adaptador através da interface HDMI. Graças a isso, você pode introduzir novos tipos de adaptadores no programa sem quebrar o código da classe Computer existente. Isso pode ser útil quando a interface de uma classe é mudada ou substituída, apenas pode criar uma nova classe adaptador sem mudar o código cliente.
 
-![adapter_after_classe](https://github.com/igor-lourenco/design-pattern-estructural-adapter/blob/main/uml/adapter_after_objeto.png) 
+![adapter_after_objeto](https://github.com/igor-lourenco/design-pattern-estructural-adapter/blob/main/uml/adapter_after_objeto.png) 
 
 ### Adaptador de classe
 
@@ -46,3 +46,4 @@ Essa implementação utiliza herança: o adaptador herda interfaces de ambos os 
 
 - A Classe HDMIToOldMonitorAdapter não precisa encobrir quaisquer objetos porque ela herda os comportamentos tanto do VGA como do HDMI. A adaptação acontece dentro dos métodos sobrescritos. O adaptador resultante pode ser usado em lugar de uma classe cliente existente.
 
+![adapter_after_classe](https://github.com/igor-lourenco/design-pattern-estructural-adapter/blob/main/uml/adapter_after_classe.png) 
