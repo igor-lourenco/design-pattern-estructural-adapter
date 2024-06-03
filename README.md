@@ -40,3 +40,9 @@ Essa implementação usa o princípio de composição do objeto: o adaptador imp
 
 ![adapter_after_classe](https://github.com/igor-lourenco/design-pattern-estructural-adapter/blob/main/uml/adapter_after_objeto.png) 
 
+### Adaptador de classe
+
+Essa implementação utiliza herança: o adaptador herda interfaces de ambos os objetos ao mesmo tempo. Observe que essa abordagem só pode ser implementada em linguagens de programação que suportam herança múltipla, tais como C++.
+
+- A Classe HDMIToOldMonitorAdapter não precisa encobrir quaisquer objetos porque ela herda os comportamentos tanto do VGA como do HDMI. A adaptação acontece dentro dos métodos sobrescritos. O adaptador resultante pode ser usado em lugar de uma classe cliente existente.
+
